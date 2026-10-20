@@ -4,7 +4,7 @@ A static, hand-coded rebuild of [focalpointhomes.com](https://focalpointhomes.co
 
 > **Not the official site.** This project is not affiliated with Focal Point Homes. The company name, logo, photos, videos, text and PDFs belong to Focal Point Homes and are used here only for practice and as a portfolio sample. The original site is at https://focalpointhomes.com/.
 
-**Live demo:** _add your Netlify / GitHub Pages link here_
+**Live demo:** [focal-point-homes.netlify.app](https://focal-point-homes.netlify.app/)
 
 ## Tech
 
