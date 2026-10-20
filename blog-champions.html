@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Champions because of our sponsorship? | Focal Point Homes</title>
+  <meta name="description" content="The Meridian High School boys varsity basketball team won the district title and now heads into the regional championship game as the number one seed.">
+  <meta name="theme-color" content="#0b1f36">
+  <link rel="icon" href="images/icon.png">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- sets dark/light theme before the page paints, so there is no white flash -->
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch (e) {}</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/blog-post.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <nav class="nav-left" aria-label="Home types">
+      <a href="custom.html">Custom</a>
+      <a href="semi-custom.html">Semi-custom</a>
+    </nav>
+
+    <a class="logo" href="index.html">
+      <img src="images/logo.jpg" alt="Focal Point Homes, home page" width="115" height="58">
+    </a>
+
+    <div class="nav-right">
+      <a class="phone" href="tel:+17033561231">(703) 356-1231</a>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch light or dark mode">◐</button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu<span class="burger" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <!-- FULL SCREEN MENU (opened by js/common.js) -->
+  <nav class="menu" id="menu" aria-label="Main menu">
+    <ul>
+      <li style="--i:0"><a href="custom.html">Custom</a></li>
+      <li style="--i:1"><a href="semi-custom.html">Semi-custom</a></li>
+      <li style="--i:2"><a href="quick-delivery.html">Quick delivery</a></li>
+      <li style="--i:3"><a href="meet-the-team.html">Meet the team</a></li>
+      <li style="--i:4"><a href="customer-reviews.html">Customer reviews</a></li>
+      <li style="--i:5"><a href="customer-care.html">Customer care</a></li>
+      <li style="--i:6"><a href="contact.html">Contact</a></li>
+      <li style="--i:7"><a href="blog.html" aria-current="page">Blog</a></li>
+    </ul>
+    <div class="menu-contact" style="--i:8">
+      <a href="tel:+17033561231">Phone (703) 356-1231</a>
+      <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=6756+Old+McLean+Village+Dr+Suite+100+McLean+VA+22101" target="_blank" rel="noopener">6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <article class="article">
+      <p class="post-meta"><time datetime="2024-02-20">February 20, 2024</time>, 2 min read</p>
+      <h1>Champions because of our sponsorship?</h1>
+      <figure><img src="images/blog-champions.webp" alt="Meridian High School basketball team" width="700" height="469"></figure>
+      <div class="article-body">
+        <p>The Meridian High School boys varsity basketball team won the district title and now heads into the regional championship game as the number one seed.</p><p>Focal Point Homes is the program’s corporate sponsor this season, so we are happy to take the credit. The players and coaches may see it differently.</p>
+      </div>
+      <nav class="article-nav" aria-label="Articles">
+        <a class="btn btn-line" href="blog-vacation.html">Newer: 7th beach vacation</a><a class="btn btn-line" href="blog.html" aria-current="page">Back to blog</a>
+      </nav>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <form class="newsletter" id="newsletter" novalidate>
+        <label class="newsletter-title" for="email">Receive news and announcements from Focal Point Homes in your inbox.</label>
+        <div class="newsletter-row">
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <button class="btn btn-dark" type="submit">Subscribe</button>
+        </div>
+        <label class="consent"><input type="checkbox" id="consent"> I consent to receive electronic news and announcements directly from Focal Point Homes.</label>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+
+      <div class="footer-links">
+        <a href="tel:+17033561231">Phone (703) 356-1231</a>
+        <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+        <address>6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</address>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="custom.html">Custom</a>
+        <a href="semi-custom.html">Semi-custom</a>
+        <a href="quick-delivery.html">Quick delivery</a>
+        <a href="meet-the-team.html">Meet the team</a>
+        <a href="customer-reviews.html">Customer reviews</a>
+        <a href="customer-care.html">Customer care</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Focal Point Homes. Practice rebuild, not the official site.</p>
+  </footer>
+  <script src="js/common.js"></script>
+</body>
+</html>

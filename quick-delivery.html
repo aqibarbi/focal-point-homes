@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Delivery Homes | Focal Point Homes</title>
+  <meta name="description" content="New homes under construction or move-in ready in McLean and nearby neighborhoods.">
+  <meta name="theme-color" content="#0b1f36">
+  <link rel="icon" href="images/icon.png">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- sets dark/light theme before the page paints, so there is no white flash -->
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch (e) {}</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/quick-delivery.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <nav class="nav-left" aria-label="Home types">
+      <a href="custom.html">Custom</a>
+      <a href="semi-custom.html">Semi-custom</a>
+    </nav>
+
+    <a class="logo" href="index.html">
+      <img src="images/logo.jpg" alt="Focal Point Homes, home page" width="115" height="58">
+    </a>
+
+    <div class="nav-right">
+      <a class="phone" href="tel:+17033561231">(703) 356-1231</a>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch light or dark mode">◐</button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu<span class="burger" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <!-- FULL SCREEN MENU (opened by js/common.js) -->
+  <nav class="menu" id="menu" aria-label="Main menu">
+    <ul>
+      <li style="--i:0"><a href="custom.html">Custom</a></li>
+      <li style="--i:1"><a href="semi-custom.html">Semi-custom</a></li>
+      <li style="--i:2"><a href="quick-delivery.html" aria-current="page">Quick delivery</a></li>
+      <li style="--i:3"><a href="meet-the-team.html">Meet the team</a></li>
+      <li style="--i:4"><a href="customer-reviews.html">Customer reviews</a></li>
+      <li style="--i:5"><a href="customer-care.html">Customer care</a></li>
+      <li style="--i:6"><a href="contact.html">Contact</a></li>
+      <li style="--i:7"><a href="blog.html">Blog</a></li>
+    </ul>
+    <div class="menu-contact" style="--i:8">
+      <a href="tel:+17033561231">Phone (703) 356-1231</a>
+      <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=6756+Old+McLean+Village+Dr+Suite+100+McLean+VA+22101" target="_blank" rel="noopener">6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="page-hero" style="--pos: center 50%">
+      <img src="images/service3.webp" alt="" width="1000" height="666">
+      <div class="page-hero-text">
+        <h1>Quick delivery homes</h1>
+        <p>New homes that are under construction or finished, ready for your moving trucks sooner.</p>
+      </div>
+    </section>
+
+    <section class="section" id="homes">
+      <div class="filter">
+        <button class="btn btn-line" type="button" data-filter="all" aria-pressed="true">All homes</button>
+        <button class="btn btn-line" type="button" data-filter="available" aria-pressed="false">Available</button>
+        <button class="btn btn-line" type="button" data-filter="contract" aria-pressed="false">Under contract</button>
+        <p class="count" id="home-count" role="status">8 homes</p>
+      </div>
+      <div class="homes">
+        <article class="home" data-status="available">
+          <div class="home-photo"><img src="https://focalpointhomes.com/wp-content/uploads/2026/10/006-6716-Van-Fleet-Dr-006-768x512.jpg" alt="Front of 6716 Van Fleet Dr" width="768" height="512" loading="lazy" referrerpolicy="no-referrer"><span class="chip chip-ok">Move-in ready</span></div>
+          <div class="home-body">
+            <h3>6716 Van Fleet Dr</h3>
+            <ul class="facts"><li>6,026 S.F.</li><li>7 beds</li><li>6.5 baths</li></ul>
+            <p class="schools">McLean High, Longfellow Middle, Kent Gardens Elem.</p>
+            <p class="home-price">$2,950,000</p>
+            <p class="home-when">Expected completion: Move-in ready now</p>
+            <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2024/04/Maxwell-brochure-2024-04-08.pdf" target="_blank" rel="noopener">Download plan</a>
+          </div>
+        </article>
+        <article class="home" data-status="available">
+          <div class="home-photo"><img src="https://focalpointhomes.com/wp-content/uploads/2026/07/Wesley-w-dark-windows-2026-07-09-768x489.jpg" alt="Front of 6526 Byrnes Dr" width="768" height="512" loading="lazy" referrerpolicy="no-referrer"><span class="chip">Available</span></div>
+          <div class="home-body">
+            <h3>6526 Byrnes Dr</h3>
+            <ul class="facts"><li>7,369 S.F.</li><li>7 beds</li><li>7 baths</li></ul>
+            <p class="schools">McLean High, Longfellow Middle, Kent Gardens Elem.</p>
+            <p class="home-price">$3,275,000</p>
+            <p class="home-when">Expected completion: Spring 2027</p>
+            <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/09/Wesley-house-plan-brochure-2026-09-04.pdf" target="_blank" rel="noopener">Download plan</a>
+          </div>
+        </article>
+        <article class="home" data-status="available">
+          <div class="home-photo"><img src="https://focalpointhomes.com/wp-content/uploads/2026/08/Oliver-w-dark-windows-and-no-dormers-2026-08-24-768x495.jpeg" alt="Front of 7126 Thrasher Rd" width="768" height="512" loading="lazy" referrerpolicy="no-referrer"><span class="chip">Available</span></div>
+          <div class="home-body">
+            <h3>7126 Thrasher Rd</h3>
+            <ul class="facts"><li>5,705 S.F.</li><li>6 beds</li><li>6/2 baths</li></ul>
+            <p class="schools">Langley High, Cooper Middle, Churchill Elem.</p>
+            <p class="home-price">$3,395,000</p>
+            <p class="home-when">Expected completion: Early 2027</p>
+            <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/09/Oliver-house-plan-brochure-2026-09-01.pdf" target="_blank" rel="noopener">Download plan</a>
+          </div>
+        </article>
+        <article class="home" data-status="available">
+          <div class="home-photo"><img src="https://focalpointhomes.com/wp-content/uploads/2026/10/514-Anne-St-2026-10-15-768x512.jpg" alt="Front of 514 Anne St" width="768" height="512" loading="lazy" referrerpolicy="no-referrer"><span class="chip">Available</span></div>
+          <div class="home-body">
+            <h3>514 Anne St</h3>
+            <ul class="facts"><li>5,364 S.F.</li><li>6 beds</li><li>5.5 baths</li></ul>
+            <p class="schools">Meridian High School, Mary Ellen Henderson Middle, Mt. Daniel Elem.</p>
+            <p class="home-price">Price to be announced</p>
+            <p class="home-when">Expected completion: Fall 2027</p>
+            <p class="home-when">Plan brochure coming soon</p>
+          </div>
+        </article>
+        <article class="home" data-status="available">
+          <div class="home-photo"><span>Photos coming soon</span><span class="chip">Available</span></div>
+          <div class="home-body">
+            <h3>407 Jackson St</h3>
+            <ul class="facts"><li>5,254 S.F.</li><li>6 beds</li><li>5.5 baths</li></ul>
+            <p class="schools">Meridian High School, Mary Ellen Henderson Middle, Mt. Daniel Elem.</p>
+            <p class="home-price">Price to be announced</p>
+            <p class="home-when">Expected completion: Fall 2027</p>
+            <p class="home-when">Plan brochure coming soon</p>
+          </div>
+        </article>
+        <article class="home is-contract" data-status="contract">
+          <div class="home-photo"><img src="https://focalpointhomes.com/wp-content/uploads/2026/10/005-6610-Quinten-St-005-768x512.jpg" alt="Front of 6610 Quinten St" width="768" height="512" loading="lazy" referrerpolicy="no-referrer"><span class="chip">Under contract</span></div>
+          <div class="home-body">
+            <h3>6610 Quinten St</h3>
+            <ul class="facts"><li>6,026 S.F.</li><li>7 beds</li><li>6.5 baths</li></ul>
+            <p class="schools">McLean High, Longfellow Middle, Haycock Elem.</p>
+            <p class="home-price">Under contract</p>
+            <p class="home-when">Expected completion: Move-in ready now</p>
+            <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2024/04/Maxwell-brochure-2024-04-08.pdf" target="_blank" rel="noopener">Download plan</a>
+          </div>
+        </article>
+        <article class="home is-contract" data-status="contract">
+          <div class="home-photo"><img src="https://focalpointhomes.com/wp-content/uploads/2026/07/Elaina-II-w-white-windows-2026-07-09-768x499.jpg" alt="Front of 2107 Haycock Rd" width="768" height="512" loading="lazy" referrerpolicy="no-referrer"><span class="chip">Under contract</span></div>
+          <div class="home-body">
+            <h3>2107 Haycock Rd</h3>
+            <ul class="facts"><li>5,568 S.F.</li><li>6 beds</li><li>6.5 baths</li></ul>
+            <p class="schools">McLean High, Longfellow Middle, Haycock Elem.</p>
+            <p class="home-price">Under contract</p>
+            <p class="home-when">Expected completion: February 2027</p>
+            <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/09/Elaina-II-house-plan-brochure-2026-09-04.pdf" target="_blank" rel="noopener">Download plan</a>
+          </div>
+        </article>
+        <article class="home is-contract" data-status="contract">
+          <div class="home-photo"><img src="https://focalpointhomes.com/wp-content/uploads/2026/07/William-w-white-windows-2026-07-09-768x489.jpg" alt="Front of 6545 Placid Street" width="768" height="512" loading="lazy" referrerpolicy="no-referrer"><span class="chip">Under contract</span></div>
+          <div class="home-body">
+            <h3>6545 Placid Street</h3>
+            <ul class="facts"><li>5,900 S.F.</li><li>6 beds</li><li>5.5 baths</li></ul>
+            <p class="schools">McLean High, Longfellow Middle, Haycock Elem.</p>
+            <p class="home-price">Under contract</p>
+            <p class="home-when">Expected completion: Late fall 2026</p>
+            <p class="home-when">Plan brochure coming soon</p>
+          </div>
+        </article>
+      </div>
+      <p class="home-when photo-note">Home photos load from the original Focal Point Homes site.</p>
+    </section>
+
+    <!-- LET'S TALK -->
+    <section class="section" id="talk">
+      <h2 class="section-title">Let’s talk</h2>
+      <div class="talk">
+        <div class="talk-info">
+          <p>Tell us what you have in mind. A member of the team will call or write back.</p>
+          <a href="tel:+17033561231"><small>Phone</small>(703) 356-1231</a>
+          <a href="mailto:sales@focalpointhomes.com"><small>Email</small>sales@focalpointhomes.com</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=6756+Old+McLean+Village+Dr+Suite+100+McLean+VA+22101" target="_blank" rel="noopener"><small>Office</small>6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</a>
+        </div>
+        <form class="inquiry" id="inquiry" novalidate>
+          <div class="field"><label for="inq-name">Name</label><input id="inq-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="inq-phone">Phone number</label><input id="inq-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="inq-email">Email address (optional)</label><input id="inq-email" name="email" type="email" autocomplete="email"></div>
+          <div class="field">
+            <label for="inq-topic">Interested in</label>
+            <select id="inq-topic" name="topic" required>
+              <option value="">Select an option</option>
+              <option>I want to build on my lot.</option>
+              <option>I want to build, but need a lot.</option>
+              <option>I need a move-in ready home.</option>
+              <option>I have land to sell.</option>
+              <option>Other.</option>
+            </select>
+          </div>
+          <div class="field"><label for="inq-text">Message</label><textarea id="inq-text" name="message" required></textarea></div>
+          <button class="btn btn-dark" type="submit">Send message</button>
+          <p class="form-msg" id="inquiry-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <form class="newsletter" id="newsletter" novalidate>
+        <label class="newsletter-title" for="email">Receive news and announcements from Focal Point Homes in your inbox.</label>
+        <div class="newsletter-row">
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <button class="btn btn-dark" type="submit">Subscribe</button>
+        </div>
+        <label class="consent"><input type="checkbox" id="consent"> I consent to receive electronic news and announcements directly from Focal Point Homes.</label>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+
+      <div class="footer-links">
+        <a href="tel:+17033561231">Phone (703) 356-1231</a>
+        <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+        <address>6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</address>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="custom.html">Custom</a>
+        <a href="semi-custom.html">Semi-custom</a>
+        <a href="quick-delivery.html" aria-current="page">Quick delivery</a>
+        <a href="meet-the-team.html">Meet the team</a>
+        <a href="customer-reviews.html">Customer reviews</a>
+        <a href="customer-care.html">Customer care</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Focal Point Homes. Practice rebuild, not the official site.</p>
+  </footer>
+  <script src="js/common.js"></script>
+  <script src="js/quick-delivery.js"></script>
+</body>
+</html>

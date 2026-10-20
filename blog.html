@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Focal Point Homes</title>
+  <meta name="description" content="News, projects and team updates from Focal Point Homes.">
+  <meta name="theme-color" content="#0b1f36">
+  <link rel="icon" href="images/icon.png">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- sets dark/light theme before the page paints, so there is no white flash -->
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch (e) {}</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/blog.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <nav class="nav-left" aria-label="Home types">
+      <a href="custom.html">Custom</a>
+      <a href="semi-custom.html">Semi-custom</a>
+    </nav>
+
+    <a class="logo" href="index.html">
+      <img src="images/logo.jpg" alt="Focal Point Homes, home page" width="115" height="58">
+    </a>
+
+    <div class="nav-right">
+      <a class="phone" href="tel:+17033561231">(703) 356-1231</a>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch light or dark mode">◐</button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu<span class="burger" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <!-- FULL SCREEN MENU (opened by js/common.js) -->
+  <nav class="menu" id="menu" aria-label="Main menu">
+    <ul>
+      <li style="--i:0"><a href="custom.html">Custom</a></li>
+      <li style="--i:1"><a href="semi-custom.html">Semi-custom</a></li>
+      <li style="--i:2"><a href="quick-delivery.html">Quick delivery</a></li>
+      <li style="--i:3"><a href="meet-the-team.html">Meet the team</a></li>
+      <li style="--i:4"><a href="customer-reviews.html">Customer reviews</a></li>
+      <li style="--i:5"><a href="customer-care.html">Customer care</a></li>
+      <li style="--i:6"><a href="contact.html">Contact</a></li>
+      <li style="--i:7"><a href="blog.html" aria-current="page">Blog</a></li>
+    </ul>
+    <div class="menu-contact" style="--i:8">
+      <a href="tel:+17033561231">Phone (703) 356-1231</a>
+      <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=6756+Old+McLean+Village+Dr+Suite+100+McLean+VA+22101" target="_blank" rel="noopener">6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="section page-title">
+      <h1>Blog</h1>
+      <p>News from the office and the job sites.</p>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Featured</h2>
+      <div class="featured">
+        <article class="post-card">
+          <a href="blog-podcast.html">
+            <img src="images/blog-podcast.webp" alt="Jeff recording a podcast" width="640" height="480" loading="lazy">
+            <h3>Jeff on NVAR’s Realtor/Builder Forum Podcast</h3>
+            <p>March 20, 2024, 1 min read</p>
+          </a>
+        </article>
+        <article class="post-card">
+          <a href="blog-vacation.html">
+            <img src="images/blog-vacation.webp" alt="The team on the beach" width="700" height="466" loading="lazy">
+            <h3>Focal Point’s 7th Beach Vacation</h3>
+            <p>February 29, 2024, 2 min read</p>
+          </a>
+        </article>
+        <article class="post-card">
+          <a href="blog-champions.html">
+            <img src="images/blog-champions.webp" alt="Meridian High School basketball champions" width="700" height="469" loading="lazy">
+            <h3>Champions because of our sponsorship?</h3>
+            <p>February 20, 2024, 2 min read</p>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">All articles</h2>
+      <ul class="post-list">
+        <li><a href="https://focalpointhomes.com/blog/chevron/" target="_blank" rel="noopener"><span class="post-title">Chevron!</span><time class="post-meta" datetime="2026-09-24">September 24, 2026</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/introducing/" target="_blank" rel="noopener"><span class="post-title">Introducing...</span><time class="post-meta" datetime="2026-08-26">August 26, 2026</time><span class="post-meta">3 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/arches/" target="_blank" rel="noopener"><span class="post-title">Arches!</span><time class="post-meta" datetime="2026-06-18">June 18, 2026</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/we-build-on-narrow-lots-also/" target="_blank" rel="noopener"><span class="post-title">We build on narrow lots also!</span><time class="post-meta" datetime="2026-05-27">May 27, 2026</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/king-cake/" target="_blank" rel="noopener"><span class="post-title">King Cake!</span><time class="post-meta" datetime="2026-02-25">February 25, 2026</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/snow-days/" target="_blank" rel="noopener"><span class="post-title">Snow Days!</span><time class="post-meta" datetime="2026-01-30">January 30, 2026</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/annual-holiday-gala/" target="_blank" rel="noopener"><span class="post-title">Annual Holiday Gala</span><time class="post-meta" datetime="2025-12-11">December 11, 2025</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/whats-not-to-love/" target="_blank" rel="noopener"><span class="post-title">What’s not to love?</span><time class="post-meta" datetime="2025-11-13">November 13, 2025</time><span class="post-meta">3 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/rockmont-is-almost-ready/" target="_blank" rel="noopener"><span class="post-title">Rockmont is almost ready!</span><time class="post-meta" datetime="2025-10-28">October 28, 2025</time><span class="post-meta">3 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/move-in-ready/" target="_blank" rel="noopener"><span class="post-title">Move-in Ready!</span><time class="post-meta" datetime="2025-08-21">August 21, 2025</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/making-progress-at-elizabeth-drive/" target="_blank" rel="noopener"><span class="post-title">Making Progress on Elizabeth Drive</span><time class="post-meta" datetime="2025-06-09">June 9, 2025</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/elevated-living-on-elizabeth-drive/" target="_blank" rel="noopener"><span class="post-title">Elevated Living on Elizabeth Drive</span><time class="post-meta" datetime="2025-05-22">May 22, 2025</time><span class="post-meta">3 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/oh-the-things-you-find-on-demo-day/" target="_blank" rel="noopener"><span class="post-title">Oh, the things you find on demo day</span><time class="post-meta" datetime="2025-05-21">May 21, 2025</time><span class="post-meta">1 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/welcome-jackson/" target="_blank" rel="noopener"><span class="post-title">Welcome Jackson!</span><time class="post-meta" datetime="2025-04-30">April 30, 2025</time><span class="post-meta">3 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/welcome-lucy/" target="_blank" rel="noopener"><span class="post-title">Welcome Lucy!</span><time class="post-meta" datetime="2025-04-01">April 1, 2025</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/tots/" target="_blank" rel="noopener"><span class="post-title">Tots!</span><time class="post-meta" datetime="2025-03-26">March 26, 2025</time><span class="post-meta">1 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/holiday-gala-december-2024/" target="_blank" rel="noopener"><span class="post-title">Holiday Gala December 2024</span><time class="post-meta" datetime="2024-12-13">December 13, 2024</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/tidy-tool-box-award/" target="_blank" rel="noopener"><span class="post-title">Tidy Tool Box Award!</span><time class="post-meta" datetime="2024-09-25">September 25, 2024</time><span class="post-meta">1 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/thats-not-the-brake/" target="_blank" rel="noopener"><span class="post-title">That’s not the brake!</span><time class="post-meta" datetime="2024-06-28">June 28, 2024</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="blog-podcast.html"><span class="post-title">Jeff on NVAR’s Realtor/Builder Forum Podcast</span><time class="post-meta" datetime="2024-03-20">March 20, 2024</time><span class="post-meta">1 min read</span></a></li>
+        <li><a href="blog-vacation.html"><span class="post-title">Focal Point’s 7th Beach Vacation</span><time class="post-meta" datetime="2024-02-29">February 29, 2024</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="blog-champions.html"><span class="post-title">Champions Because of our Sponsorship?</span><time class="post-meta" datetime="2024-02-20">February 20, 2024</time><span class="post-meta">2 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/straying-from-the-dress-code/" target="_blank" rel="noopener"><span class="post-title">Dress Code Compliant?</span><time class="post-meta" datetime="2023-12-13">December 13, 2023</time><span class="post-meta">1 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/new-hats/" target="_blank" rel="noopener"><span class="post-title">New Hats!</span><time class="post-meta" datetime="2023-12-06">December 6, 2023</time><span class="post-meta">1 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/fire-department-training/" target="_blank" rel="noopener"><span class="post-title">Fire Department Training</span><time class="post-meta" datetime="2023-11-30">November 30, 2023</time><span class="post-meta">1 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/the-effects-of-retirement/" target="_blank" rel="noopener"><span class="post-title">The Effects of Retirement?</span><time class="post-meta" datetime="2023-10-31">October 31, 2023</time><span class="post-meta">1 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/nick-shoots-hoops-on-an-ostrich/" target="_blank" rel="noopener"><span class="post-title">Nick Shoots Hoops (on an Ostrich?)</span><time class="post-meta" datetime="2023-10-25">October 25, 2023</time><span class="post-meta">1 min read</span></a></li>
+        <li><a href="https://focalpointhomes.com/blog/were-excited/" target="_blank" rel="noopener"><span class="post-title">We’re excited!</span><time class="post-meta" datetime="2023-09-18">September 18, 2023</time><span class="post-meta">1 min read</span></a></li>
+      </ul>
+      <p class="load-more"><button class="btn btn-line" type="button" id="load-more">Load more articles</button></p>
+      <p class="note-small">Articles without a page here open on the original Focal Point Homes site.</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <form class="newsletter" id="newsletter" novalidate>
+        <label class="newsletter-title" for="email">Receive news and announcements from Focal Point Homes in your inbox.</label>
+        <div class="newsletter-row">
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <button class="btn btn-dark" type="submit">Subscribe</button>
+        </div>
+        <label class="consent"><input type="checkbox" id="consent"> I consent to receive electronic news and announcements directly from Focal Point Homes.</label>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+
+      <div class="footer-links">
+        <a href="tel:+17033561231">Phone (703) 356-1231</a>
+        <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+        <address>6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</address>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="custom.html">Custom</a>
+        <a href="semi-custom.html">Semi-custom</a>
+        <a href="quick-delivery.html">Quick delivery</a>
+        <a href="meet-the-team.html">Meet the team</a>
+        <a href="customer-reviews.html">Customer reviews</a>
+        <a href="customer-care.html">Customer care</a>
+        <a href="blog.html" aria-current="page">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Focal Point Homes. Practice rebuild, not the official site.</p>
+  </footer>
+  <script src="js/common.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

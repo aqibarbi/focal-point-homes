@@ -1,0 +1,109 @@
+/* customer-reviews.html: video hero, review cards, story tiles */
+.review-list {
+    columns: 3 300px;
+    column-gap: 1.5rem;
+}
+
+.review {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: var(--bg-soft);
+    display: grid;
+    gap: .8rem;
+}
+
+.stars {
+    color: var(--accent-text);
+    letter-spacing: .15em;
+}
+
+.review footer {
+    color: var(--text-soft);
+    font-size: .9rem;
+}
+
+.review footer strong {
+    display: block;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.note {
+    color: var(--text-soft);
+    margin: -1.5rem 0 2rem;
+    max-width: 60ch;
+}
+
+.stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: 1.5rem;
+}
+
+.story-tile {
+    display: grid;
+    gap: .8rem;
+    align-content: space-between;
+    padding: 1.75rem;
+    border-radius: 24px;
+    background: var(--navy);
+    color: var(--bg);
+    min-height: 260px;
+}
+
+.story-tile .year {
+    font-family: var(--font-title);
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.story-tile .btn {
+    justify-self: start;
+    background: #fff;
+    color: #0b1f36;
+}
+
+.story-tile .btn:hover {
+    background: #21c3ea;
+}
+
+.story-tile.is-small {
+    min-height: 180px;
+    background: var(--bg-soft);
+    color: var(--text);
+}
+
+.story-tile.is-small h3 {
+    font-size: 1.6rem;
+}
+
+.story-tile.is-small .btn {
+    background: var(--navy);
+    color: var(--bg);
+}
+/* small screens: a cropped hero would cut both people out, so show the whole video, text below */
+@media (max-width: 768px) {
+  .page-hero {
+    display: block;
+    min-height: 0;
+    overflow: visible;
+    color: var(--text);
+  }
+  .page-hero::after {
+    display: none;
+  }
+  .page-hero > video {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 960 / 678;
+    border-radius: 20px;
+  }
+  .page-hero-text {
+    padding: 1.5rem 0.5rem 0;
+  }
+}

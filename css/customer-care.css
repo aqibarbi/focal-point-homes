@@ -1,0 +1,89 @@
+/* customer-care.html: client portal panel + searchable guide list */
+.portal {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: clamp(1.5rem, 5vw, 4rem);
+    padding: clamp(1.5rem, 4vw, 3rem);
+    border-radius: 28px;
+    background: var(--navy);
+    color: var(--bg);
+    align-items: center;
+}
+
+.portal p {
+    opacity: .85;
+    margin-top: .8rem;
+    max-width: 46ch;
+}
+
+.portal-links {
+    display: grid;
+    gap: .8rem;
+    justify-items: start;
+}
+
+.portal .btn-cyan {
+    color: #091c32;
+}
+
+.portal a.plain {
+    color: var(--bg);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    opacity: .85;
+}
+
+.guide-search {
+    display: grid;
+    gap: .3rem;
+    max-width: 420px;
+    margin-bottom: 1.5rem;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.guide-search input {
+    font: inherit;
+    padding: .85rem 1.2rem;
+    border-radius: 999px;
+    border: 1px solid var(--line);
+    background: var(--bg-soft);
+    color: var(--text);
+}
+
+.guides {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 clamp(2rem, 5vw, 4rem);
+}
+
+.guides li[hidden] {
+    display: none;
+}
+
+.guides a {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--line);
+    transition: all 0.3s var(--ease);
+}
+
+.guides a:hover {
+    color: var(--accent);
+    padding-left: .5rem;
+}
+
+.guides span {
+    color: var(--text-soft);
+    font-size: .8rem;
+}
+
+@media (max-width: 768px) {
+
+    .portal,
+    .guides {
+        grid-template-columns: 1fr;
+    }
+}

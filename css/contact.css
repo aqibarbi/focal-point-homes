@@ -1,0 +1,8 @@
+/* contact.html: layout comes from .talk in pages.css; this adds the visit note under the form */
+.talk-info small {
+    text-transform: none;
+}
+
+.talk-info a[href^="https://www.google"] {
+    border-style: dashed;
+}

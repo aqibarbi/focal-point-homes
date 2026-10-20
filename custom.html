@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Homes | Focal Point Homes</title>
+  <meta name="description" content="Custom homes in Northern Virginia, designed from the ground up for your taste, needs and lot.">
+  <meta name="theme-color" content="#0b1f36">
+  <link rel="icon" href="images/icon.png">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- sets dark/light theme before the page paints, so there is no white flash -->
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch (e) {}</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <nav class="nav-left" aria-label="Home types">
+      <a href="custom.html" aria-current="page">Custom</a>
+      <a href="semi-custom.html">Semi-custom</a>
+    </nav>
+
+    <a class="logo" href="index.html">
+      <img src="images/logo.jpg" alt="Focal Point Homes, home page" width="115" height="58">
+    </a>
+
+    <div class="nav-right">
+      <a class="phone" href="tel:+17033561231">(703) 356-1231</a>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch light or dark mode">◐</button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu<span class="burger" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <!-- FULL SCREEN MENU (opened by js/common.js) -->
+  <nav class="menu" id="menu" aria-label="Main menu">
+    <ul>
+      <li style="--i:0"><a href="custom.html" aria-current="page">Custom</a></li>
+      <li style="--i:1"><a href="semi-custom.html">Semi-custom</a></li>
+      <li style="--i:2"><a href="quick-delivery.html">Quick delivery</a></li>
+      <li style="--i:3"><a href="meet-the-team.html">Meet the team</a></li>
+      <li style="--i:4"><a href="customer-reviews.html">Customer reviews</a></li>
+      <li style="--i:5"><a href="customer-care.html">Customer care</a></li>
+      <li style="--i:6"><a href="contact.html">Contact</a></li>
+      <li style="--i:7"><a href="blog.html">Blog</a></li>
+    </ul>
+    <div class="menu-contact" style="--i:8">
+      <a href="tel:+17033561231">Phone (703) 356-1231</a>
+      <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=6756+Old+McLean+Village+Dr+Suite+100+McLean+VA+22101" target="_blank" rel="noopener">6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="page-hero hero-slideshow" style="--pos: center 60%">
+      <img src="images/service1.webp" alt="" width="1000" height="666">
+      <!-- photos fade into each other and drift on scroll (js/hero-slider.js). The local image above shows if the online ones fail -->
+      <div class="hero-parallax" aria-hidden="true">
+        <img class="hero-slide is-active" src="https://focalpointhomes.com/wp-content/uploads/2023/07/7001-Bright-Ave-32.jpg" alt="" referrerpolicy="no-referrer" decoding="async">
+        <img class="hero-slide" src="https://focalpointhomes.com/wp-content/uploads/2023/08/DSC_8229-scaled.jpg" alt="" referrerpolicy="no-referrer" decoding="async">
+        <img class="hero-slide" src="https://focalpointhomes.com/wp-content/uploads/2023/07/6902-Lupine-Ln-17.jpg" alt="" referrerpolicy="no-referrer" decoding="async">
+      </div>
+      <div class="page-hero-text">
+        <h1>Custom homes are one of a kind</h1>
+        <p>Designed from the ground up around your taste, your needs and your lot.</p>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <h2>Custom home construction</h2>
+      <p>Our architects work with you on a plan built from scratch. Planning and permitting take longer, and construction usually costs more than a pre-designed plan. In return, every detail, from the layout to the finishes, can be yours.</p>
+    </section>
+
+    <section class="section" aria-label="Custom homes we have built">
+      <div class="slider" role="group" aria-roledescription="carousel" aria-label="Custom homes we have built">
+        <div class="slider-main">
+          <ul class="slides">
+          <li class="slide"><img src="images/g1-2.webp" alt="Custom homes we have built, photo 1" width="900" height="600"></li>
+          <li class="slide"><img src="images/g1-4.webp" alt="Custom homes we have built, photo 2" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g1-5.webp" alt="Custom homes we have built, photo 3" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g1-7.webp" alt="Custom homes we have built, photo 4" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g1-8.webp" alt="Custom homes we have built, photo 5" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g1-9.webp" alt="Custom homes we have built, photo 6" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g1-1.webp" alt="Custom homes we have built, photo 7" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g1-3.webp" alt="Custom homes we have built, photo 8" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g1-6.webp" alt="Custom homes we have built, photo 9" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g1-10.webp" alt="Custom homes we have built, photo 10" width="900" height="600" loading="lazy"></li>
+          </ul>
+          <button class="slider-btn slider-prev" type="button" aria-label="Previous photo">‹</button>
+          <button class="slider-btn slider-next" type="button" aria-label="Next photo">›</button>
+          <p class="slider-count" role="status"></p>
+        </div>
+        <ul class="slider-thumbs">
+          <li><button type="button" aria-label="Show photo 1"><img src="images/g1-2.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 2"><img src="images/g1-4.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 3"><img src="images/g1-5.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 4"><img src="images/g1-7.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 5"><img src="images/g1-8.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 6"><img src="images/g1-9.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 7"><img src="images/g1-1.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 8"><img src="images/g1-3.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 9"><img src="images/g1-6.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 10"><img src="images/g1-10.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Our custom home building process</h2>
+      <div class="process">
+        <figure class="process-img"><img src="images/g1-6.webp" alt="Custom home under construction" width="900" height="600" loading="lazy"></figure>
+        <ol class="steps">
+          <li>Meet with us and share your goals.</li>
+          <li>Choose a lot. We give you a ballpark estimate of building costs.</li>
+          <li>Meet our architect and describe how you want the home to look and work.</li>
+          <li>Sign a plan design agreement and pay a schematic design fee.</li>
+          <li>Review and sign our fixed price contract to build the home as designed.</li>
+          <li>Place the home on your lot with help from a topographic survey.</li>
+          <li>Work with our designers on your selections. We add them to the contract by addendum.</li>
+          <li>Stay in touch with the team through permitting and construction.</li>
+          <li>Make construction draw payments at agreed milestones.</li>
+          <li>Move in about ten days after the occupancy permit is issued.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- LET'S TALK -->
+    <section class="section" id="talk">
+      <h2 class="section-title">Let’s talk</h2>
+      <div class="talk">
+        <div class="talk-info">
+          <p>Tell us what you have in mind. A member of the team will call or write back.</p>
+          <a href="tel:+17033561231"><small>Phone</small>(703) 356-1231</a>
+          <a href="mailto:sales@focalpointhomes.com"><small>Email</small>sales@focalpointhomes.com</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=6756+Old+McLean+Village+Dr+Suite+100+McLean+VA+22101" target="_blank" rel="noopener"><small>Office</small>6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</a>
+        </div>
+        <form class="inquiry" id="inquiry" novalidate>
+          <div class="field"><label for="inq-name">Name</label><input id="inq-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="inq-phone">Phone number</label><input id="inq-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="inq-email">Email address (optional)</label><input id="inq-email" name="email" type="email" autocomplete="email"></div>
+          <div class="field">
+            <label for="inq-topic">Interested in</label>
+            <select id="inq-topic" name="topic" required>
+              <option value="">Select an option</option>
+              <option>I want to build on my lot.</option>
+              <option>I want to build, but need a lot.</option>
+              <option>I need a move-in ready home.</option>
+              <option>I have land to sell.</option>
+              <option>Other.</option>
+            </select>
+          </div>
+          <div class="field"><label for="inq-text">Message</label><textarea id="inq-text" name="message" required></textarea></div>
+          <button class="btn btn-dark" type="submit">Send message</button>
+          <p class="form-msg" id="inquiry-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <form class="newsletter" id="newsletter" novalidate>
+        <label class="newsletter-title" for="email">Receive news and announcements from Focal Point Homes in your inbox.</label>
+        <div class="newsletter-row">
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <button class="btn btn-dark" type="submit">Subscribe</button>
+        </div>
+        <label class="consent"><input type="checkbox" id="consent"> I consent to receive electronic news and announcements directly from Focal Point Homes.</label>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+
+      <div class="footer-links">
+        <a href="tel:+17033561231">Phone (703) 356-1231</a>
+        <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+        <address>6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</address>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="custom.html" aria-current="page">Custom</a>
+        <a href="semi-custom.html">Semi-custom</a>
+        <a href="quick-delivery.html">Quick delivery</a>
+        <a href="meet-the-team.html">Meet the team</a>
+        <a href="customer-reviews.html">Customer reviews</a>
+        <a href="customer-care.html">Customer care</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Focal Point Homes. Practice rebuild, not the official site.</p>
+  </footer>
+  <script src="js/common.js"></script>
+  <script src="js/hero-slider.js"></script>
+  <script src="js/slider.js"></script>
+</body>
+</html>

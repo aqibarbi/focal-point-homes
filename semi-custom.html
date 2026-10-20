@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semi-Custom Homes | Focal Point Homes</title>
+  <meta name="description" content="Choose a pre-designed plan from our collection, then customize it with our designers.">
+  <meta name="theme-color" content="#0b1f36">
+  <link rel="icon" href="images/icon.png">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- sets dark/light theme before the page paints, so there is no white flash -->
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch (e) {}</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/semi-custom.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <nav class="nav-left" aria-label="Home types">
+      <a href="custom.html">Custom</a>
+      <a href="semi-custom.html" aria-current="page">Semi-custom</a>
+    </nav>
+
+    <a class="logo" href="index.html">
+      <img src="images/logo.jpg" alt="Focal Point Homes, home page" width="115" height="58">
+    </a>
+
+    <div class="nav-right">
+      <a class="phone" href="tel:+17033561231">(703) 356-1231</a>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch light or dark mode">◐</button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu<span class="burger" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <!-- FULL SCREEN MENU (opened by js/common.js) -->
+  <nav class="menu" id="menu" aria-label="Main menu">
+    <ul>
+      <li style="--i:0"><a href="custom.html">Custom</a></li>
+      <li style="--i:1"><a href="semi-custom.html" aria-current="page">Semi-custom</a></li>
+      <li style="--i:2"><a href="quick-delivery.html">Quick delivery</a></li>
+      <li style="--i:3"><a href="meet-the-team.html">Meet the team</a></li>
+      <li style="--i:4"><a href="customer-reviews.html">Customer reviews</a></li>
+      <li style="--i:5"><a href="customer-care.html">Customer care</a></li>
+      <li style="--i:6"><a href="contact.html">Contact</a></li>
+      <li style="--i:7"><a href="blog.html">Blog</a></li>
+    </ul>
+    <div class="menu-contact" style="--i:8">
+      <a href="tel:+17033561231">Phone (703) 356-1231</a>
+      <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=6756+Old+McLean+Village+Dr+Suite+100+McLean+VA+22101" target="_blank" rel="noopener">6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="page-hero hero-slideshow" style="--pos: center 55%">
+      <img src="images/service2.webp" alt="" width="1000" height="666">
+      <!-- photos fade into each other and drift on scroll (js/hero-slider.js). The local image above shows if the online ones fail -->
+      <div class="hero-parallax" aria-hidden="true">
+        <img class="hero-slide is-active" src="https://focalpointhomes.com/wp-content/uploads/2023/08/Semi-Custom.jpg" alt="" referrerpolicy="no-referrer" decoding="async">
+        <img class="hero-slide" src="https://focalpointhomes.com/wp-content/uploads/2023/08/1001-Congress-Ln-01b-1.jpg" alt="" referrerpolicy="no-referrer" decoding="async">
+        <img class="hero-slide" src="https://focalpointhomes.com/wp-content/uploads/2023/08/57-web-or-mls-7210-Thrasher-Rd-57-1.jpg" alt="" referrerpolicy="no-referrer" decoding="async">
+        <img class="hero-slide" src="https://focalpointhomes.com/wp-content/uploads/2023/08/7028-Elizabeth-DSC05158-HDR-1-e1768509128246.jpg" alt="" referrerpolicy="no-referrer" decoding="async">
+      </div>
+      <div class="page-hero-text">
+        <h1>Start with a pre-designed plan</h1>
+        <p>Pick a plan we have already refined, then make it yours inside and out.</p>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <h2>Semi-custom construction</h2>
+      <p>We designed and refined a collection of plans over many builds. You choose the one you like, then work with our designers to adjust it to your tastes.</p>
+    </section>
+
+    <section class="section" aria-label="Semi-custom homes we have built">
+      <div class="slider" role="group" aria-roledescription="carousel" aria-label="Semi-custom homes we have built">
+        <div class="slider-main">
+          <ul class="slides">
+          <li class="slide"><img src="images/g2-1.webp" alt="Semi-custom homes we have built, photo 1" width="900" height="600"></li>
+          <li class="slide"><img src="images/g2-2.webp" alt="Semi-custom homes we have built, photo 2" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g2-3.webp" alt="Semi-custom homes we have built, photo 3" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g2-4.webp" alt="Semi-custom homes we have built, photo 4" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g2-5.webp" alt="Semi-custom homes we have built, photo 5" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g2-6.webp" alt="Semi-custom homes we have built, photo 6" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g2-7.webp" alt="Semi-custom homes we have built, photo 7" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g2-8.webp" alt="Semi-custom homes we have built, photo 8" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g2-9.webp" alt="Semi-custom homes we have built, photo 9" width="900" height="600" loading="lazy"></li>
+          <li class="slide"><img src="images/g2-10.webp" alt="Semi-custom homes we have built, photo 10" width="900" height="600" loading="lazy"></li>
+          </ul>
+          <button class="slider-btn slider-prev" type="button" aria-label="Previous photo">‹</button>
+          <button class="slider-btn slider-next" type="button" aria-label="Next photo">›</button>
+          <p class="slider-count" role="status"></p>
+        </div>
+        <ul class="slider-thumbs">
+          <li><button type="button" aria-label="Show photo 1"><img src="images/g2-1.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 2"><img src="images/g2-2.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 3"><img src="images/g2-3.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 4"><img src="images/g2-4.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 5"><img src="images/g2-5.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 6"><img src="images/g2-6.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 7"><img src="images/g2-7.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 8"><img src="images/g2-8.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 9"><img src="images/g2-9.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+          <li><button type="button" aria-label="Show photo 10"><img src="images/g2-10.webp" alt="" width="300" height="200" loading="lazy"></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Why choose semi-custom</h2>
+      <ul class="benefits">
+        <li>Plans refined over many builds</li>
+        <li>Photos and virtual walk-throughs of homes already built from each plan</li>
+        <li>Up-front pricing for every plan and its standard upgrades</li>
+        <li>Shorter permitting and construction timelines</li>
+        <li>Lower total cost from design and construction efficiencies</li>
+      </ul>
+    </section>
+
+    <section class="section" id="plans">
+      <h2 class="section-title">Plans</h2>
+      <div class="plans-bar">
+        <label>Sort plans
+          <select id="plan-sort">
+            <option value="price-low">Price, low to high</option>
+            <option value="price-high">Price, high to low</option>
+            <option value="size-high">Size, largest first</option>
+            <option value="size-low">Size, smallest first</option>
+            <option value="name">Name, A to Z</option>
+          </select>
+        </label>
+        <a class="btn btn-dark" href="https://focalpointhomes.com/wp-content/uploads/2025/11/Included-features-list-FPH-2024-06-03.pdf" target="_blank" rel="noopener">Download included features</a>
+      </div>
+      <ul id="plan-list">
+        <li class="plan" data-name="Nicholas" data-price="760000" data-sqft="3764">
+          <h3 class="plan-name">The Nicholas</h3>
+          <p class="plan-specs">3,764 S.F.<br>4 beds, 4.5 baths</p>
+          <p class="plan-price">$760,000</p>
+          <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/10/Nicholas-house-plan-brochure-2026-09-30.pdf" target="_blank" rel="noopener">Download plan</a>
+        </li>
+        <li class="plan" data-name="Julia" data-price="850000" data-sqft="5805">
+          <h3 class="plan-name">The Julia</h3>
+          <p class="plan-specs">5,805 S.F.<br>6 beds, 5.5 baths</p>
+          <p class="plan-price">$850,000</p>
+          <span class="plan-soon">Brochure coming soon</span>
+        </li>
+        <li class="plan" data-name="Reeves II" data-price="860000" data-sqft="5954">
+          <h3 class="plan-name">The Reeves II</h3>
+          <p class="plan-specs">5,954 S.F.<br>6 beds, 5.5 baths</p>
+          <p class="plan-price">$860,000</p>
+          <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/10/Reeves-II-house-plan-brochure-2026-09-30.pdf" target="_blank" rel="noopener">Download plan</a>
+        </li>
+        <li class="plan" data-name="Hannah" data-price="865000" data-sqft="5468">
+          <h3 class="plan-name">The Hannah</h3>
+          <p class="plan-specs">5,468 S.F.<br>5 beds, 5.5 baths</p>
+          <p class="plan-price">$865,000</p>
+          <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/10/Hannah-house-plan-brochure-2026-09-30.pdf" target="_blank" rel="noopener">Download plan</a>
+        </li>
+        <li class="plan" data-name="Elaina II" data-price="870000" data-sqft="5749">
+          <h3 class="plan-name">The Elaina II</h3>
+          <p class="plan-specs">5,749 S.F.<br>6 beds, 5.5 baths</p>
+          <p class="plan-price">$870,000</p>
+          <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/10/Elaina-II-house-plan-brochure-2026-09-30.pdf" target="_blank" rel="noopener">Download plan</a>
+        </li>
+        <li class="plan" data-name="William" data-price="885000" data-sqft="5900">
+          <h3 class="plan-name">The William</h3>
+          <p class="plan-specs">5,900 S.F.<br>6 beds, 5.5 baths</p>
+          <p class="plan-price">$885,000</p>
+          <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/10/William-house-plan-brochure-2026-09-30.pdf" target="_blank" rel="noopener">Download plan</a>
+        </li>
+        <li class="plan" data-name="Maxwell" data-price="930000" data-sqft="7088">
+          <h3 class="plan-name">The Maxwell</h3>
+          <p class="plan-specs">7,088 S.F.<br>7 beds, 6.5 baths</p>
+          <p class="plan-price">$930,000</p>
+          <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/10/Maxwell-house-plan-brochure-2026-09-30.pdf" target="_blank" rel="noopener">Download plan</a>
+        </li>
+        <li class="plan" data-name="Oliver" data-price="955000" data-sqft="4873">
+          <h3 class="plan-name">The Oliver</h3>
+          <p class="plan-specs">4,873 S.F.<br>5 beds, 4.5 baths</p>
+          <p class="plan-price">$955,000</p>
+          <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/10/Oliver-house-plan-brochure-2026-09-30.pdf" target="_blank" rel="noopener">Download plan</a>
+        </li>
+        <li class="plan" data-name="Hayes" data-price="990000" data-sqft="7015">
+          <h3 class="plan-name">The Hayes</h3>
+          <p class="plan-specs">7,015 S.F.<br>7 beds, 6.5 baths</p>
+          <p class="plan-price">$990,000</p>
+          <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/10/Hayes-house-plan-brochure-2026-09-30.pdf" target="_blank" rel="noopener">Download plan</a>
+        </li>
+        <li class="plan" data-name="Wesley" data-price="1000000" data-sqft="7589">
+          <h3 class="plan-name">The Wesley</h3>
+          <p class="plan-specs">7,589 S.F.<br>6 beds, 7 baths</p>
+          <p class="plan-price">$1,000,000</p>
+          <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/10/Wesley-house-plan-brochure-2026-09-30.pdf" target="_blank" rel="noopener">Download plan</a>
+        </li>
+        <li class="plan" data-name="Daniel" data-price="1025000" data-sqft="0">
+          <h3 class="plan-name">The Daniel</h3>
+          <p class="plan-specs">Specs coming soon</p>
+          <p class="plan-price">$1,025,000</p>
+          <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/10/Daniel-house-plan-brochure-2026-10-01.pdf" target="_blank" rel="noopener">Download plan</a>
+        </li>
+        <li class="plan" data-name="Miriam II" data-price="1060000" data-sqft="7650">
+          <h3 class="plan-name">The Miriam II</h3>
+          <p class="plan-specs">7,650 S.F.<br>6 beds, 5.5 baths</p>
+          <p class="plan-price">$1,060,000</p>
+          <a class="btn btn-line" href="https://focalpointhomes.com/wp-content/uploads/2026/10/Miriam-II-house-plan-brochure-2026-09-30.pdf" target="_blank" rel="noopener">Download plan</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Our semi-custom building process</h2>
+      <div class="process">
+        <figure class="process-img"><img src="images/g2-3.webp" alt="Semi-custom home, finished exterior" width="900" height="600" loading="lazy"></figure>
+        <ol class="steps">
+          <li>Meet with us and share your goals.</li>
+          <li>Choose a lot, then a plan that fits on it.</li>
+          <li>Review our estimate of permitting and site work costs.</li>
+          <li>Sign a contract at the base plan price and pay a deposit.</li>
+          <li>Place the home on your lot with help from a topographic survey.</li>
+          <li>Work with our designers to customize the features of your home.</li>
+          <li>Add your option selections to the contract by addendum.</li>
+          <li>Stay in touch with the team through permitting and construction.</li>
+          <li>Make construction draw payments at agreed milestones.</li>
+          <li>Move in about ten days after the occupancy permit is issued.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- LET'S TALK -->
+    <section class="section" id="talk">
+      <h2 class="section-title">Let’s talk</h2>
+      <div class="talk">
+        <div class="talk-info">
+          <p>Tell us what you have in mind. A member of the team will call or write back.</p>
+          <a href="tel:+17033561231"><small>Phone</small>(703) 356-1231</a>
+          <a href="mailto:sales@focalpointhomes.com"><small>Email</small>sales@focalpointhomes.com</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=6756+Old+McLean+Village+Dr+Suite+100+McLean+VA+22101" target="_blank" rel="noopener"><small>Office</small>6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</a>
+        </div>
+        <form class="inquiry" id="inquiry" novalidate>
+          <div class="field"><label for="inq-name">Name</label><input id="inq-name" name="name" type="text" autocomplete="name" required></div>
+          <div class="field"><label for="inq-phone">Phone number</label><input id="inq-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="inq-email">Email address (optional)</label><input id="inq-email" name="email" type="email" autocomplete="email"></div>
+          <div class="field">
+            <label for="inq-topic">Interested in</label>
+            <select id="inq-topic" name="topic" required>
+              <option value="">Select an option</option>
+              <option>I want to build on my lot.</option>
+              <option>I want to build, but need a lot.</option>
+              <option>I need a move-in ready home.</option>
+              <option>I have land to sell.</option>
+              <option>Other.</option>
+            </select>
+          </div>
+          <div class="field"><label for="inq-text">Message</label><textarea id="inq-text" name="message" required></textarea></div>
+          <button class="btn btn-dark" type="submit">Send message</button>
+          <p class="form-msg" id="inquiry-msg" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <form class="newsletter" id="newsletter" novalidate>
+        <label class="newsletter-title" for="email">Receive news and announcements from Focal Point Homes in your inbox.</label>
+        <div class="newsletter-row">
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <button class="btn btn-dark" type="submit">Subscribe</button>
+        </div>
+        <label class="consent"><input type="checkbox" id="consent"> I consent to receive electronic news and announcements directly from Focal Point Homes.</label>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+
+      <div class="footer-links">
+        <a href="tel:+17033561231">Phone (703) 356-1231</a>
+        <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+        <address>6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</address>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="custom.html">Custom</a>
+        <a href="semi-custom.html" aria-current="page">Semi-custom</a>
+        <a href="quick-delivery.html">Quick delivery</a>
+        <a href="meet-the-team.html">Meet the team</a>
+        <a href="customer-reviews.html">Customer reviews</a>
+        <a href="customer-care.html">Customer care</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Focal Point Homes. Practice rebuild, not the official site.</p>
+  </footer>
+  <script src="js/common.js"></script>
+  <script src="js/hero-slider.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/semi-custom.js"></script>
+</body>
+</html>

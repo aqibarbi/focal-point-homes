@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Care | Focal Point Homes</title>
+  <meta name="description" content="Warranty contacts, the client portal and home maintenance guides for Focal Point homeowners.">
+  <meta name="theme-color" content="#0b1f36">
+  <link rel="icon" href="images/icon.png">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- sets dark/light theme before the page paints, so there is no white flash -->
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch (e) {}</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/customer-care.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <nav class="nav-left" aria-label="Home types">
+      <a href="custom.html">Custom</a>
+      <a href="semi-custom.html">Semi-custom</a>
+    </nav>
+
+    <a class="logo" href="index.html">
+      <img src="images/logo.jpg" alt="Focal Point Homes, home page" width="115" height="58">
+    </a>
+
+    <div class="nav-right">
+      <a class="phone" href="tel:+17033561231">(703) 356-1231</a>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch light or dark mode">◐</button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu<span class="burger" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <!-- FULL SCREEN MENU (opened by js/common.js) -->
+  <nav class="menu" id="menu" aria-label="Main menu">
+    <ul>
+      <li style="--i:0"><a href="custom.html">Custom</a></li>
+      <li style="--i:1"><a href="semi-custom.html">Semi-custom</a></li>
+      <li style="--i:2"><a href="quick-delivery.html">Quick delivery</a></li>
+      <li style="--i:3"><a href="meet-the-team.html">Meet the team</a></li>
+      <li style="--i:4"><a href="customer-reviews.html">Customer reviews</a></li>
+      <li style="--i:5"><a href="customer-care.html" aria-current="page">Customer care</a></li>
+      <li style="--i:6"><a href="contact.html">Contact</a></li>
+      <li style="--i:7"><a href="blog.html">Blog</a></li>
+    </ul>
+    <div class="menu-contact" style="--i:8">
+      <a href="tel:+17033561231">Phone (703) 356-1231</a>
+      <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=6756+Old+McLean+Village+Dr+Suite+100+McLean+VA+22101" target="_blank" rel="noopener">6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="section page-title">
+      <h1>Customer care</h1>
+      <p>Tools and guides for people who already own or are building a Focal Point home.</p>
+    </section>
+
+    <section class="section" id="portal">
+      <div class="portal">
+        <div>
+          <h2>Client portal</h2>
+          <p>Current clients log in to CoConstruct to make selections, approve change orders and follow the progress of their home.</p>
+        </div>
+        <div class="portal-links">
+          <a class="btn btn-cyan" href="https://coconstruct.com/" target="_blank" rel="noopener">Open the client portal</a>
+          <a class="plain" href="https://coconstruct.com/app/public/ForgotPassword.aspx?skinPath=default" target="_blank" rel="noopener">Forgot your password?</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="guides">
+      <h2 class="section-title">Home care and maintenance guides</h2>
+      <label class="guide-search">Search guides
+        <input type="search" id="guide-search" placeholder="Try gutters, HVAC or warranty" autocomplete="off">
+      </label>
+      <ul class="guides">
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/NAHB-Residential-Construction-Performance-Guidelines-6th-Ed-1.pdf" target="_blank" rel="noopener">NAHB Residential Construction Performance Guidelines (6th ed.)<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Warranty-Contact-Information-1.pdf" target="_blank" rel="noopener">Warranty Contact Information<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Areaway-and-Window-Well-Drainage-1.pdf" target="_blank" rel="noopener">Areaway and Window Well Drainage<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Electrical-Outlet-Circuit-Interrupters-1.pdf" target="_blank" rel="noopener">Electrical Outlet Circuit Interrupters<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Exterior-Concrete-Maintenance-1.pdf" target="_blank" rel="noopener">Exterior Concrete Maintenance<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Garbage-Disposal-Troubleshooting-1.pdf" target="_blank" rel="noopener">Garbage Disposal Troubleshooting<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Gutter-Cleaning-1.pdf" target="_blank" rel="noopener">Gutter Cleaning<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Hardwood-Floor-Care-1.pdf" target="_blank" rel="noopener">Hardwood Floor Care<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Hose-Bib-Winterization-1.pdf" target="_blank" rel="noopener">Hose Bib Winterization<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Humidifier-Care-Guide-1.pdf" target="_blank" rel="noopener">Humidifier Care Guide<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/HVAC-Maintenance-1.pdf" target="_blank" rel="noopener">HVAC Maintenance<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Sink-Aerator-Cleaning-1.pdf" target="_blank" rel="noopener">Sink Aerator Cleaning<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Smoke-Detector-Care-1.pdf" target="_blank" rel="noopener">Smoke Detector Care<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Stormwater-Facility-Maintenance-1.pdf" target="_blank" rel="noopener">Stormwater Facility Maintenance<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Sump-Pumps-1.pdf" target="_blank" rel="noopener">Sump Pumps<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Tile-and-Countertop-Caulking-1.pdf" target="_blank" rel="noopener">Tile and Countertop Caulking<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Water-Heater-Maintenance-1.pdf" target="_blank" rel="noopener">Water Heater Maintenance<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Water-Shut-off-Valves-1.pdf" target="_blank" rel="noopener">Water Shut-off Valves<span>PDF</span></a></li>
+        <li><a href="https://focalpointhomes.com/wp-content/uploads/2023/07/Yard-and-Lawn-Care-1.pdf" target="_blank" rel="noopener">Yard and Lawn Care<span>PDF</span></a></li>
+      </ul>
+      <p class="no-events" id="guide-empty" hidden>No guide matches that search. Call <a href="tel:+17033561231">(703) 356-1231</a> and we will help.</p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <form class="newsletter" id="newsletter" novalidate>
+        <label class="newsletter-title" for="email">Receive news and announcements from Focal Point Homes in your inbox.</label>
+        <div class="newsletter-row">
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <button class="btn btn-dark" type="submit">Subscribe</button>
+        </div>
+        <label class="consent"><input type="checkbox" id="consent"> I consent to receive electronic news and announcements directly from Focal Point Homes.</label>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+
+      <div class="footer-links">
+        <a href="tel:+17033561231">Phone (703) 356-1231</a>
+        <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+        <address>6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</address>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="custom.html">Custom</a>
+        <a href="semi-custom.html">Semi-custom</a>
+        <a href="quick-delivery.html">Quick delivery</a>
+        <a href="meet-the-team.html">Meet the team</a>
+        <a href="customer-reviews.html">Customer reviews</a>
+        <a href="customer-care.html" aria-current="page">Customer care</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Focal Point Homes. Practice rebuild, not the official site.</p>
+  </footer>
+  <script src="js/common.js"></script>
+  <script src="js/customer-care.js"></script>
+</body>
+</html>

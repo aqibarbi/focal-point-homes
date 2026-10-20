@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focal Point Homes | Custom and Semi-Custom Homes in McLean, VA</title>
+  <meta name="description" content="Custom, semi-custom and quick delivery homes in Northern Virginia. Practice rebuild of the Focal Point Homes website.">
+  <meta name="theme-color" content="#0b1f36">
+  <link rel="icon" href="images/icon.png">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- sets dark/light theme before the page paints, so there is no white flash -->
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch (e) {}</script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <nav class="nav-left" aria-label="Home types">
+      <a href="custom.html">Custom</a>
+      <a href="semi-custom.html">Semi-custom</a>
+    </nav>
+
+    <a class="logo" href="#top">
+      <img src="images/logo.jpg" alt="Focal Point Homes" width="115" height="58">
+    </a>
+
+    <div class="nav-right">
+      <a class="phone" href="tel:+17033561231">(703) 356-1231</a>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch light or dark mode">◐</button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu<span class="burger" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <!-- FULL SCREEN MENU (opened by js/main.js) -->
+  <nav class="menu" id="menu" aria-label="Main menu">
+    <ul>
+      <li style="--i:0"><a href="custom.html">Custom</a></li>
+      <li style="--i:1"><a href="semi-custom.html">Semi-custom</a></li>
+      <li style="--i:2"><a href="quick-delivery.html">Quick delivery</a></li>
+      <li style="--i:3"><a href="meet-the-team.html">Meet the team</a></li>
+      <li style="--i:4"><a href="customer-reviews.html">Customer reviews</a></li>
+      <li style="--i:5"><a href="customer-care.html">Customer care</a></li>
+      <li style="--i:6"><a href="contact.html">Contact</a></li>
+      <li style="--i:7"><a href="blog.html">Blog</a></li>
+    </ul>
+    <div class="menu-contact" style="--i:8">
+      <a href="tel:+17033561231">Phone (703) 356-1231</a>
+      <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=6756+Old+McLean+Village+Dr+Suite+100+McLean+VA+22101" target="_blank" rel="noopener">6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</a>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <video class="hero-video" autoplay muted loop playsinline poster="images/hero-poster.webp">
+        <source src="video/hero.mp4" type="video/mp4">
+      </video>
+      <div class="hero-content">
+        <h1>A reputation built on exceeding expectations</h1>
+        <div class="hero-buttons">
+          <a class="btn btn-light" href="#contact">Book a consultation</a>
+          <button class="btn btn-outline" id="intro-btn" type="button">▶ Play intro video</button>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#intro">Scroll to explore</a>
+    </section>
+
+    <!-- INTRO -->
+    <section class="intro section" id="intro">
+      <h2>Let’s work together to create something spectacular</h2>
+      <p>
+        Since our founding in 2010, we have built hundreds of homes and formed countless new
+        friendships along the way. Driven by our love for beautiful, timeless architecture and
+        for creating exceptional experiences for our clients, we strive each day to dream,
+        design, and deliver even better than the day before. Whether you aspire to build a
+        completely custom home or prefer the speed and simplicity of a predesigned plan,
+        we are here to help.
+      </p>
+    </section>
+
+    <!-- GALLERY: images are added by js/main.js -->
+    <section class="gallery" aria-label="Photo gallery">
+      <div class="marquee"><div class="track track-left" id="row1"></div></div>
+      <div class="marquee"><div class="track track-right" id="row2"></div></div>
+    </section>
+
+    <!-- HOME TYPES (bento grid) -->
+    <section class="section" id="homes">
+      <h2 class="section-title">Choose between</h2>
+      <div class="bento">
+        <a class="card card-big" href="custom.html">
+          <img src="images/service1.webp" alt="Custom home built by Focal Point Homes" width="1000" height="666" loading="lazy">
+          <div class="card-text">
+            <h3>Custom homes</h3>
+            <p>Work with our team to design and build a one-of-a-kind custom home, unique to you and perfect for your lot.</p>
+          </div>
+        </a>
+        <a class="card" href="semi-custom.html">
+          <img src="images/service2.webp" alt="Semi-custom home plan" width="1000" height="666" loading="lazy">
+          <div class="card-text">
+            <h3>Semi-custom homes</h3>
+            <p>Save money and time by choosing a semi-custom model from our curated plans, then customize it to fit your needs.</p>
+          </div>
+        </a>
+        <a class="card" href="quick-delivery.html">
+          <img src="images/service3.webp" alt="Quick delivery home in progress" width="1000" height="666" loading="lazy">
+          <div class="card-text">
+            <h3>Quick delivery homes</h3>
+            <p>Take a peek at a quick-delivery home we already have in process and get ready to schedule your moving trucks soon.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- NEED A LOT -->
+    <h2 class="build-title">Want to build,<br>but need a lot?</h2>
+    <section class="lot" id="contact">
+      <div class="lot-text">
+        <h3>We can help with that too!</h3>
+        <p>We’re constantly learning about available, off-market lots and we can even purchase properties for clients when needed.</p>
+        <a class="btn btn-cyan" href="tel:+17033561231">(703) 356-1231</a>
+      </div>
+      <p class="lot-bottom">Send us a message or give us a call. We’re eager to help however we can!</p>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="section reviews" id="reviews">
+      <div>
+        <h2>Hear what our customers are saying about us</h2>
+        <blockquote>
+          <p>We walk through the neighborhood where our house is being built and… everybody has positive things to say about Focal Point Homes.</p>
+          <footer>Bill &amp; Mara</footer>
+        </blockquote>
+      </div>
+      <!-- wide screens: video stays fixed, this frame is a window that reveals it while you scroll. Small screens: whole video inside the frame -->
+      <div class="review-frame">
+        <video class="review-video" autoplay muted loop playsinline poster="images/service1.webp">
+          <source src="video/review.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="team" id="team">
+      <div class="team-text">
+        <h2>Learn more<br>about us and<br>our team</h2>
+        <a class="btn btn-light" href="meet-the-team.html">Meet the team</a>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="section" id="news">
+      <h2 class="section-title">Check out our latest news</h2>
+      <div class="news-grid">
+        <article class="news news-big">
+          <a href="blog-podcast.html">
+            <img src="images/blog-podcast.webp" alt="Jeff recording a podcast" width="640" height="480" loading="lazy">
+            <h3>Jeff on NVAR’s Realtor/Builder Forum Podcast</h3>
+            <p><time datetime="2024-03-20">March 20, 2024</time> · 1 min read</p>
+          </a>
+        </article>
+        <article class="news">
+          <a href="blog-vacation.html">
+            <img src="images/blog-vacation.webp" alt="Team on the beach" width="700" height="466" loading="lazy">
+            <h3>Focal Point’s 7th Beach Vacation</h3>
+            <p><time datetime="2024-02-29">February 29, 2024</time> · 2 min read</p>
+          </a>
+        </article>
+        <article class="news">
+          <a href="blog-champions.html">
+            <img src="images/blog-champions.webp" alt="Meridian High School basketball champions" width="700" height="469" loading="lazy">
+            <h3>Champions because of our sponsorship?</h3>
+            <p><time datetime="2024-02-20">February 20, 2024</time> · 2 min read</p>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- OPEN HOUSES: js/main.js marks past dates -->
+    <section class="section" id="open-houses">
+      <h2 class="section-title">Upcoming open houses</h2>
+      <article class="open-house" data-date="2026-10-17">
+        <p class="oh-date"><time datetime="2026-10-17">Saturday, October 17, 2026</time><br>2:00 PM to 4:00 PM</p>
+        <p class="oh-name">Semi-custom<br>‘Maxwell’ plan</p>
+        <address><a class="map-link" href="https://www.google.com/maps/search/?api=1&query=6716+Van+Fleet+Dr+McLean+VA+22101" target="_blank" rel="noopener">6716 Van Fleet Dr,<br>McLean, VA 22101</a></address>
+        <p class="oh-price">$2,950,000</p>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <form class="newsletter" id="newsletter" novalidate>
+        <label class="newsletter-title" for="email">Receive news and announcements from Focal Point Homes in your inbox.</label>
+        <div class="newsletter-row">
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <button class="btn btn-dark" type="submit">Subscribe</button>
+        </div>
+        <label class="consent"><input type="checkbox" id="consent"> I consent to receive electronic news and announcements directly from Focal Point Homes.</label>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+
+      <div class="footer-links">
+        <a href="tel:+17033561231">Phone (703) 356-1231</a>
+        <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+        <address>6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</address>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="custom.html">Custom</a>
+        <a href="semi-custom.html">Semi-custom</a>
+        <a href="quick-delivery.html">Quick delivery</a>
+        <a href="meet-the-team.html">Meet the team</a>
+        <a href="customer-reviews.html">Customer reviews</a>
+        <a href="customer-care.html">Customer care</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="copyright">© <span id="year">2024</span> Focal Point Homes. Practice rebuild, not the official site.</p>
+  </footer>
+
+  <!-- INTRO VIDEO (Vimeo player is added by js/main.js when opened) -->
+  <dialog class="lightbox" id="intro-modal" aria-label="Intro video">
+    <button class="lb-close" id="intro-close" type="button" aria-label="Close video">✕</button>
+    <div class="video-wrap">
+      <div class="video-frame" id="video-frame"></div>
+      <a class="vimeo-link" href="https://vimeo.com/1133629204" target="_blank" rel="noopener">Video not loading? Watch on Vimeo</a>
+    </div>
+  </dialog>
+
+  <!-- LIGHTBOX for gallery photos -->
+  <dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+    <button class="lb-close" id="lb-close" type="button" aria-label="Close">✕</button>
+    <button class="lb-prev" id="lb-prev" type="button" aria-label="Previous photo">‹</button>
+    <img id="lb-img" src="" alt="">
+    <button class="lb-next" id="lb-next" type="button" aria-label="Next photo">›</button>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

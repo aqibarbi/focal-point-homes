@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews | Focal Point Homes</title>
+  <meta name="description" content="Read summaries of Google reviews and watch video stories from Focal Point Homes owners.">
+  <meta name="theme-color" content="#0b1f36">
+  <link rel="icon" href="images/icon.png">
+  <link rel="preload" href="fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <!-- sets dark/light theme before the page paints, so there is no white flash -->
+  <script>try { document.documentElement.dataset.theme = localStorage.getItem("theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"); } catch (e) {}</script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/customer-reviews.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <nav class="nav-left" aria-label="Home types">
+      <a href="custom.html">Custom</a>
+      <a href="semi-custom.html">Semi-custom</a>
+    </nav>
+
+    <a class="logo" href="index.html">
+      <img src="images/logo.jpg" alt="Focal Point Homes, home page" width="115" height="58">
+    </a>
+
+    <div class="nav-right">
+      <a class="phone" href="tel:+17033561231">(703) 356-1231</a>
+      <button class="icon-btn" id="theme-btn" type="button" aria-label="Switch light or dark mode">◐</button>
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu<span class="burger" aria-hidden="true"></span></button>
+    </div>
+  </header>
+
+  <!-- FULL SCREEN MENU (opened by js/common.js) -->
+  <nav class="menu" id="menu" aria-label="Main menu">
+    <ul>
+      <li style="--i:0"><a href="custom.html">Custom</a></li>
+      <li style="--i:1"><a href="semi-custom.html">Semi-custom</a></li>
+      <li style="--i:2"><a href="quick-delivery.html">Quick delivery</a></li>
+      <li style="--i:3"><a href="meet-the-team.html">Meet the team</a></li>
+      <li style="--i:4"><a href="customer-reviews.html" aria-current="page">Customer reviews</a></li>
+      <li style="--i:5"><a href="customer-care.html">Customer care</a></li>
+      <li style="--i:6"><a href="contact.html">Contact</a></li>
+      <li style="--i:7"><a href="blog.html">Blog</a></li>
+    </ul>
+    <div class="menu-contact" style="--i:8">
+      <a href="tel:+17033561231">Phone (703) 356-1231</a>
+      <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+      <a href="https://www.google.com/maps/search/?api=1&query=6756+Old+McLean+Village+Dr+Suite+100+McLean+VA+22101" target="_blank" rel="noopener">6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</a>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section class="page-hero" style="--pos: center 40%">
+      <video autoplay muted loop playsinline poster="images/service1.webp">
+        <source src="video/review.mp4" type="video/mp4">
+      </video>
+      <div class="page-hero-text"><h1>Hear what our customers are saying about us</h1></div>
+    </section>
+
+    <section class="section" id="google">
+      <h2 class="section-title">What owners wrote on Google</h2>
+      <p class="note">Short summaries of reviews posted on Google. Read the full text on the original site.</p>
+      <div class="review-list">
+        <article class="review">
+          <p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>Called the team professional and easy to work with. Scheduling was quick, and a roofing job finished sooner than expected.</p>
+          <footer><strong>Emily Wells</strong>August 28, 2026</footer>
+        </article>
+        <article class="review">
+          <p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>Credits president Jeff Jardine with spending long hours helping them find a lot. Describes the company as a leading McLean and Arlington builder known for integrity and attention to detail.</p>
+          <footer><strong>Darrell Carlisle</strong>August 20, 2026</footer>
+        </article>
+        <article class="review">
+          <p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>Researched builders for almost two years before choosing Focal Point. The home came in on time and on budget, questions got fast answers even a year after move-in, and the crew treated the neighborhood with respect during the teardown. Would build with them again.</p>
+          <footer><strong>Dick Stark</strong>June 10, 2026</footer>
+        </article>
+        <article class="review">
+          <p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>Spent a year building with the team and liked the transparency and open communication. Singled out project manager Nick for keeping them informed about upcoming work and changes.</p>
+          <footer><strong>TJ Multani</strong>June 1, 2026</footer>
+        </article>
+        <article class="review">
+          <p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>Home delivered on time in December 2025. Found every staff member knowledgeable and easy to reach.</p>
+          <footer><strong>Marcus Cunningham</strong>May 15, 2026</footer>
+        </article>
+        <article class="review">
+          <p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>Started the build from over 6,000 miles away. Frequent updates with progress photos from the project manager made that workable, and two years in they still would not choose another builder.</p>
+          <footer><strong>A M</strong>October 29, 2025</footer>
+        </article>
+        <article class="review">
+          <p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>Toured neighbors’ Focal Point homes before choosing. Started from a model and adjusted the framing and wiring for a future elevator, sauna and generator. Home arrived on time at the agreed price, and the team returns 30 days and one year after move-in to fix concerns.</p>
+          <footer><strong>Jeff &amp; Karen Miller</strong>August 19, 2025</footer>
+        </article>
+        <article class="review">
+          <p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>Bought a new Focal Point home and praised project manager Matt for his quick answers and thorough walk-through. Two years in, still impressed by the solid construction and layout.</p>
+          <footer><strong>Kate Moses</strong>August 5, 2025</footer>
+        </article>
+        <article class="review">
+          <p class="stars" role="img" aria-label="5 out of 5 stars">★★★★★</p>
+          <p>Began the process about three years earlier after seeing several Focal Point homes. Design suggestions kept the budget in mind, the home came in on time and within the estimate, and the team still answers questions after settlement.</p>
+          <footer><strong>Kat Seawe</strong>August 4, 2025</footer>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experiences">
+      <h2 class="section-title">Customer experiences</h2>
+      <div class="stories">
+        <article class="story-tile">
+          <p class="year">2025</p>
+          <p>Owners who say the build changed their lives.</p>
+          <button class="btn" type="button" data-vimeo="1133629204" data-title="Customer experience, 2025">Watch the 2025 story</button>
+        </article>
+        <article class="story-tile">
+          <p class="year">2021</p>
+          <p>Owners who finished the build with new friends.</p>
+          <button class="btn" type="button" data-vimeo="654608293" data-title="Customer experience, 2021">Watch the 2021 story</button>
+        </article>
+        <article class="story-tile">
+          <p class="year">2017</p>
+          <p>Owners who got custom features at a standard price.</p>
+          <button class="btn" type="button" data-vimeo="208504770" data-title="Customer experience, 2017">Watch the 2017 story</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="more-stories">
+      <h2 class="section-title">More stories</h2>
+      <div class="stories">
+        <article class="story-tile is-small"><h3>Expectations vs reality</h3><button class="btn" type="button" data-vimeo="1133632835" data-title="Expectations vs reality">Watch video</button></article>
+        <article class="story-tile is-small"><h3>Relationships</h3><button class="btn" type="button" data-vimeo="1133633909" data-title="Relationships">Watch video</button></article>
+        <article class="story-tile is-small"><h3>Customization</h3><button class="btn" type="button" data-vimeo="1133634734" data-title="Customization">Watch video</button></article>
+        <article class="story-tile is-small"><h3>Team building</h3><button class="btn" type="button" data-vimeo="1133635583" data-title="Team building">Watch video</button></article>
+      </div>
+    </section>
+
+    <!-- STORY VIDEO (Vimeo player is added by js/customer-reviews.js when opened) -->
+    <dialog class="lightbox" id="story-modal" aria-label="Customer story video">
+      <button class="lb-close" id="story-close" type="button" aria-label="Close video">✕</button>
+      <div class="video-wrap">
+        <div class="video-frame" id="story-frame"></div>
+        <a class="vimeo-link" id="story-link" href="https://vimeo.com/" target="_blank" rel="noopener">Video not loading? Watch on Vimeo</a>
+      </div>
+    </dialog>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <form class="newsletter" id="newsletter" novalidate>
+        <label class="newsletter-title" for="email">Receive news and announcements from Focal Point Homes in your inbox.</label>
+        <div class="newsletter-row">
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          <button class="btn btn-dark" type="submit">Subscribe</button>
+        </div>
+        <label class="consent"><input type="checkbox" id="consent"> I consent to receive electronic news and announcements directly from Focal Point Homes.</label>
+        <p class="form-msg" id="form-msg" role="status"></p>
+      </form>
+
+      <div class="footer-links">
+        <a href="tel:+17033561231">Phone (703) 356-1231</a>
+        <a href="mailto:sales@focalpointhomes.com">sales@focalpointhomes.com</a>
+        <address>6756 Old McLean Village Dr. Suite 100, McLean, VA 22101</address>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="custom.html">Custom</a>
+        <a href="semi-custom.html">Semi-custom</a>
+        <a href="quick-delivery.html">Quick delivery</a>
+        <a href="meet-the-team.html">Meet the team</a>
+        <a href="customer-reviews.html" aria-current="page">Customer reviews</a>
+        <a href="customer-care.html">Customer care</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <p class="copyright">© <span id="year">2026</span> Focal Point Homes. Practice rebuild, not the official site.</p>
+  </footer>
+  <script src="js/common.js"></script>
+  <script src="js/customer-reviews.js"></script>
+</body>
+</html>

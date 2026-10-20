@@ -1,0 +1,4 @@
+/* custom.html: only page-specific tweaks (slider and steps come from pages.css) */
+.process-img img {
+    object-position: center top;
+}

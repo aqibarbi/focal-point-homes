@@ -1,0 +1,105 @@
+/* quick-delivery.html: filter + home cards */
+.filter {
+    display: flex;
+    gap: .6rem;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.filter .count {
+    margin-left: auto;
+    color: var(--text-soft);
+    font-size: .9rem;
+}
+
+.homes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr));
+    gap: 2rem 1.5rem;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    overflow: hidden;
+    background: var(--bg-soft);
+    box-shadow: var(--shadow);
+}
+
+.home-photo {
+    position: relative;
+    aspect-ratio: 3 / 2;
+    background: var(--navy);
+    display: grid;
+    place-items: center;
+    color: var(--bg);
+}
+
+.home-photo img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-photo .chip {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.home.is-contract .home-photo img {
+    filter: grayscale(.5);
+}
+
+.home-body {
+    padding: 1.4rem 1.6rem 1.7rem;
+    display: grid;
+    gap: .7rem;
+    flex: 1;
+    align-content: start;
+}
+
+.facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .3rem 1.2rem;
+    font-weight: 500;
+}
+
+.facts li+li {
+    padding-left: 1.2rem;
+    border-left: 1px solid var(--line);
+}
+
+.schools {
+    color: var(--text-soft);
+    font-size: .9rem;
+}
+
+.home-price {
+    font-family: var(--font-title);
+    font-size: 2rem;
+    line-height: 1.1;
+}
+
+.home-when {
+    font-size: .9rem;
+    color: var(--text-soft);
+}
+
+.home .btn {
+    justify-self: start;
+    margin-top: .4rem;
+}
+
+.home[hidden] {
+    display: none;
+}
+
+.photo-note {
+    margin-top: 2rem;
+}

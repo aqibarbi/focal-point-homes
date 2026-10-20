@@ -1,0 +1,155 @@
+/* meet-the-team.html: story, member cards, values */
+.story {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: clamp(2rem, 6vw, 6rem);
+}
+
+.story p {
+    color: var(--text-soft);
+    font-size: 1.1rem;
+    max-width: 62ch;
+}
+
+.story p+p {
+    margin-top: 1rem;
+}
+
+.crew {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.member {
+    border-radius: 24px;
+    background: var(--bg-soft);
+    overflow: hidden;
+    border: 1px solid transparent;
+    transition: all 0.3s var(--ease);
+}
+
+.member[open] {
+    border-color: var(--accent);
+    box-shadow: var(--shadow);
+}
+
+.member summary {
+    list-style: none;
+    cursor: pointer;
+    display: block;
+}
+
+.member summary::-webkit-details-marker {
+    display: none;
+}
+
+.member summary:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: -3px;
+    border-radius: 24px;
+}
+
+.member-photo {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    background: var(--navy);
+    overflow: hidden;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform .6s var(--ease);
+}
+
+.member summary:hover .member-photo img {
+    transform: scale(1.04);
+}
+
+.member-photo.no-photo img {
+    display: none;
+}
+
+.member-photo.no-photo::after {
+    content: attr(data-initials);
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-title);
+    font-size: 4rem;
+    color: var(--bg);
+}
+
+.member-head {
+    padding: 1.1rem 1.4rem;
+}
+
+.member-head h3 {
+    font-size: 1.6rem;
+}
+
+.member-head p {
+    color: var(--text-soft);
+    font-size: .9rem;
+}
+
+.member-more {
+    display: inline-block;
+    margin-top: .4rem;
+    font-size: .85rem;
+    color: var(--accent-text);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.member-bio {
+    padding: 0 1.4rem 1.5rem;
+    display: grid;
+    gap: .6rem;
+    font-size: .92rem;
+}
+
+.member-bio ul {
+    display: grid;
+    gap: .4rem;
+    padding-left: 1.1rem;
+    list-style: disc;
+}
+
+.member-bio a {
+    color: var(--accent-text);
+    font-weight: 500;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 clamp(2rem, 6vw, 6rem);
+}
+
+.values li {
+    padding: 1.1rem 0;
+    border-top: 1px solid var(--line);
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+@media (max-width: 768px) {
+
+    .story,
+    .values {
+        grid-template-columns: 1fr;
+    }
+}
+
+.values-lead {
+    color: var(--text-soft);
+    margin: -1.5rem 0 2rem;
+    max-width: 60ch;
+}

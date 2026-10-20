@@ -1,0 +1,456 @@
+/* ============ SHARED PARTS FOR ALL SUB PAGES ============
+   Base styles (fonts, colors, header, menu, footer, buttons, lightbox) come from css/style.css.
+   This file adds only what the sub pages share. Each page then adds its own css/<page>.css. */
+
+/* current page link in the menus */
+.nav-left a[aria-current],
+.footer-nav a[aria-current],
+.menu a[aria-current] {
+  color: var(--accent);
+}
+
+/* ---------- PAGE HERO: image behind the title, text at bottom left ---------- */
+.page-hero {
+  position: relative;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  color: #fff;
+  margin: .5rem clamp(.5rem, 2vw, 1.5rem) 0;
+  min-height: min(64svh, 600px);
+  border-radius: 28px;
+}
+
+.page-hero>img,
+.page-hero>video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--pos, center);
+}
+
+.page-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(7, 21, 34, .82), rgba(7, 21, 34, .12) 65%);
+}
+
+.page-hero-text {
+  position: relative;
+  z-index: 2;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  max-width: 900px;
+  animation: rise 1s var(--ease) both;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.6rem, 6vw, 5rem);
+}
+
+.page-hero p {
+  margin-top: 1rem;
+  max-width: 52ch;
+  font-size: 1.1rem;
+  opacity: .92;
+}
+
+/* ---------- PAGE TITLE: pages without a hero image ---------- */
+.page-title {
+  padding-bottom: 1rem;
+}
+
+.page-title h1 {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  max-width: 16ch;
+}
+
+.page-title p {
+  margin-top: 1.25rem;
+  max-width: 56ch;
+  font-size: 1.15rem;
+  color: var(--text-soft);
+}
+
+/* ---------- BUTTONS (extra) ---------- */
+.btn-line {
+  border-color: var(--line);
+  color: var(--text);
+  background: transparent;
+}
+
+.btn-line:hover {
+  background: var(--navy);
+  color: var(--bg);
+}
+
+.btn-line[aria-pressed="true"] {
+  background: var(--navy);
+  color: var(--bg);
+  border-color: var(--navy);
+}
+
+/* ---------- BUILDING PROCESS: sticky photo + numbered steps (a real sequence) ---------- */
+.process {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+}
+
+.process-img {
+  position: sticky;
+  top: 100px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.process-img img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.steps {
+  list-style: none;
+  padding: 0;
+  counter-reset: step;
+  position: relative;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.steps::before {
+  content: "";
+  position: absolute;
+  left: calc(1.35rem - 1px);
+  top: 1.35rem;
+  bottom: 1.35rem;
+  width: 2px;
+  background: var(--line);
+}
+
+/* one line behind all circles */
+.steps li {
+  list-style: none;
+  counter-increment: step;
+  display: grid;
+  grid-template-columns: 2.7rem 1fr;
+  gap: 1.2rem;
+  align-items: center;
+  min-height: 2.7rem;
+}
+
+.steps li::marker {
+  content: none;
+}
+
+/* hides the browser's own "1." */
+.steps li::before {
+  content: counter(step);
+  position: relative;
+  z-index: 1;
+  width: 2.7rem;
+  height: 2.7rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--accent);
+  color: #091c32;
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* ---------- LET'S TALK: contact links + form ---------- */
+.talk {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.talk-info {
+  display: grid;
+  gap: .8rem;
+  align-content: start;
+}
+
+.talk-info p {
+  color: var(--text-soft);
+  max-width: 40ch;
+  margin-bottom: .5rem;
+}
+
+.talk-info a {
+  display: block;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  transition: all 0.3s var(--ease);
+  overflow-wrap: anywhere;
+}
+
+.talk-info a:hover {
+  border-color: var(--accent);
+  transform: translateX(4px);
+}
+
+.talk-info small {
+  display: block;
+  color: var(--text-soft);
+  font-size: .8rem;
+}
+
+.inquiry {
+  display: grid;
+  gap: 1rem;
+}
+
+.field {
+  display: grid;
+  gap: .35rem;
+}
+
+.field label {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.field input,
+.field select,
+.field textarea {
+  font: inherit;
+  width: 100%;
+  padding: .85rem 1.1rem;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+  color: var(--text);
+  transition: all 0.3s var(--ease);
+}
+
+.field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.field input:focus-visible,
+.field select:focus-visible,
+.field textarea:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.field [aria-invalid="true"] {
+  border-color: #d6453d;
+}
+
+.inquiry .btn {
+  justify-self: start;
+}
+
+/* ---------- STATUS CHIP ---------- */
+.chip {
+  display: inline-block;
+  padding: .2rem .8rem;
+  border-radius: 999px;
+  font-size: .8rem;
+  font-weight: 500;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+
+.chip-ok {
+  background: #21c3ea;
+  color: #091c32;
+  border-color: #21c3ea;
+}
+
+@media (max-width: 992px) {
+
+  .process,
+  .talk {
+    grid-template-columns: 1fr;
+  }
+
+  .process-img {
+    position: static;
+  }
+
+  .process-img img {
+    aspect-ratio: 3 / 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    border-radius: 20px;
+    min-height: 56svh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-hero-text {
+    animation: none;
+  }
+}
+
+.page-title {
+  padding-bottom: 0;
+}
+
+/* ---------- PHOTO SLIDER: big photo + thumbnail strip (js/slider.js) ---------- */
+.slider-main {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  background: var(--bg-soft);
+  touch-action: pan-y;
+}
+
+.slides {
+  display: flex;
+  transition: transform .5s var(--ease);
+}
+
+.slide {
+  flex: 0 0 100%;
+}
+
+.slide img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(7, 21, 34, .55);
+  color: #fff;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+}
+
+.slider-btn:hover {
+  background: #21c3ea;
+  color: #091c32;
+}
+
+.slider-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}
+
+.slider-prev {
+  left: 1rem;
+}
+
+.slider-next {
+  right: 1rem;
+}
+
+.slider-count {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: .25rem .8rem;
+  border-radius: 999px;
+  background: rgba(7, 21, 34, .6);
+  color: #fff;
+  font-size: .85rem;
+}
+
+.slider-thumbs {
+  display: flex;
+  gap: .75rem;
+  margin-top: 1rem;
+  padding: 4px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.slider-thumbs button {
+  flex: 0 0 auto;
+  padding: 0;
+  border: 3px solid transparent;
+  border-radius: 14px;
+  background: none;
+  cursor: pointer;
+  opacity: .6;
+  transition: all 0.3s var(--ease);
+}
+
+.slider-thumbs button:hover {
+  opacity: 1;
+}
+
+.slider-thumbs button[aria-current="true"] {
+  opacity: 1;
+  border-color: var(--accent);
+}
+
+.slider-thumbs img {
+  width: clamp(92px, 12vw, 150px);
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .slide img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .slider-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slides {
+    transition: none;
+  }
+}
+/* ---------- HERO SLIDESHOW + PARALLAX (custom.html and semi-custom.html, js/hero-slider.js) ---------- */
+/* the layer is taller than the hero; the script slides it a little while you scroll */
+.hero-parallax {
+  position: absolute;
+  inset: -8% 0;
+  will-change: transform;
+}
+
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--pos, center);
+  opacity: 0;
+  transition: opacity 1.4s ease; /* cross-fade between photos */
+}
+
+.hero-slide.is-active {
+  opacity: 1;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-slide {
+    transition: none;
+  }
+}
